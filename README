@@ -1,0 +1,11 @@
+NestedModels
+============
+
+This is a backport of the Rails 2.3 nested models functionality. This particular iteration of the nested models feature comes from the Rails 2.3RC1 release. Hopefully, this is added in such a way such that when updating to a new version of Rails, we will just have to remove this plugin and nothing will have to change in the models that define accept_nested_attributes_for().
+
+For usage check these blog posts:
+http://weblog.rubyonrails.com/2009/2/6/this-week-in-edge-rails
+http://weblog.rubyonrails.org/2009/1/26/nested-model-forms
+
+TODO: Remove this plugin after updating to Rails >= v2.3!
+
