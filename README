@@ -9,3 +9,4 @@ http://weblog.rubyonrails.org/2009/1/26/nested-model-forms
 
 TODO: Remove this plugin after updating to Rails >= v2.3!
 
+Updated the plugin to include all the ActionView goodness for using nested forms as well as a copious amount of documentation throughout.
