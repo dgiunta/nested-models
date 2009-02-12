@@ -1,4 +1,4 @@
-Dir['nested_models/**/*', 'action_view/**/*'].each { |f| require f }
+Dir[File.join(File.dirname(__FILE__), 'nested_models', '**', '*.rb')].each { |f| require f }
 
 # Since the Reflection and Associations modules just needed a couple additional methods added to them, 
 # rather than creating separate files for these and including them and whatnot, I'm just adding them in

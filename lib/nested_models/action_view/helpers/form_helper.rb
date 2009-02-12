@@ -1,4 +1,4 @@
-ActionView::Helpers::AdditionalFormHelper.module_eval do
+ActionView::Helpers::FormHelper.module_eval do
   # Creates a scope around a specific model object like form_for, but
   # doesn't create the form tags themselves. This makes fields_for suitable
   # for specifying additional model objects in the same form.
@@ -175,7 +175,6 @@ ActionView::Helpers::AdditionalFormHelper.module_eval do
   #     <% end %>
   #   <% end %>
   def fields_for(record_or_name_or_array, *args, &block)
-    raise 'here!'
     raise ArgumentError, "Missing block" unless block_given?
     options = args.extract_options!
 
