@@ -130,7 +130,10 @@ module ActiveRecord
         alias_method_chain :reload, :autosave_associations
         alias_method_chain :save,   :autosave_associations
         alias_method_chain :valid?, :autosave_associations
-
+        
+        # Commenting this out as this implementation is slightly different in Rails 2.3RC1 than it is 
+        # in older versions of Rails, and thus breaks.
+        # 
         # %w{ has_one belongs_to has_many has_and_belongs_to_many }.each do |type|
         #   base.send("valid_keys_for_#{type}_association") << :autosave
         # end
